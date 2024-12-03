@@ -1,7 +1,8 @@
 # ICLR_2025_Submission_10435
 ICLR 2025 Submission Number 10435
 
-The folder ""
+The folder "Step_1_SingleObj" contains the code to train M0 Catboost model, the Random Selection AutoGeTS code, Sliding Window AutoGeTS code, Hierarchical Sliding Window AutoGeTS code, and Genetic Algorithm AutoGeTS code. It also contains the code of using traditional data augmentation method, the Easy Data Augmentation (EDA) tool, to generate synthtic samples for experiments.
+
 The folder "Step_2_Pathway" contains information on our ensemble algorithm experiment. The folder ending with "A" is the ensemble algorithm, the folder ending with "C" is the random sequence, the "Naive-SW" is the "Stack SW", the "Hierarchical-SW" is the "Stach HSW", and the "NSGA-II_Retraining" is the "Stack GA".
 The 3 example selection strategies (SW, HSW, GA), and the 4 objectives (maximising CR, CBA, OBA, OF1) are also shown in these codes. The same functions were used in Experiments in Section 4.
 
