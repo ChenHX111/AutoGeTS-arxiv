@@ -10,5 +10,7 @@ The folder "AutoGeTS" contains the original model M0 and the code used to train 
 
 The PDF "ICLR_AutoGeTS_Appendix F_TREC-6 Results.pdf" presents the results of experiments conducted on TREC-6, an additional dataset, to assess the generalizability of our proposed AutoGeTS workflow.
 
+The PDF "KDD_2025_AutoGeTS_Submission" contains the submitted draft of the revised AutoGeTS paper to KDD 2025.
+
 Required packages: 
 pip install catboost==1.2.5 inspyred==1.0.2 joblib==1.1.0 matplotlib==3.4.3 matplotlib-inline==0.1.7 numpy==1.26.4 "nvidia-ml-py==12.555.43" pandas==2.2.2 plotly==5.22.0 psutil==5.8.0 scikit-learn==0.24.2 openpyxl
