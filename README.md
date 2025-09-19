@@ -1,16 +1,25 @@
-# ICLR_2025_Submission_10435
-ICLR 2025 Submission Number 10435
+# AutoGeTS: Knowledge-based Automated Generation of Text Synthetics for Improving Text Classification
 
-The folder "Step_1_SingleObj" contains the code to train M0 Catboost model, the Random Selection AutoGeTS code, Sliding Window AutoGeTS code, Hierarchical Sliding Window AutoGeTS code, and Genetic Algorithm AutoGeTS code. It also contains the code of using traditional data augmentation method, the Easy Data Augmentation (EDA) tool, to generate synthtic samples for experiments.
+**Authors**: Chenhao Xue, Raia Hadsell, Hugo Larochelle
 
-The folder "Step_2_Pathway" contains information on our ensemble algorithm experiment. The folder ending with "A" is the ensemble algorithm, the folder ending with "C" is the random sequence, the "Naive-SW" is the "Stack SW", the "Hierarchical-SW" is the "Stach HSW", and the "NSGA-II_Retraining" is the "Stack GA".
-The 3 example selection strategies (SW, HSW, GA), and the 4 objectives (maximising CR, CBA, OBA, OF1) are also shown in these codes. The same functions were used in Experiments in Section 4.
+---
 
-The folder "AutoGeTS" contains the original model M0 and the code used to train M0. The synthetic data would be disclosed later after the approval of the data provider. Sorry that the original data "tickets_topics.csv" is owned by the company so we are not allowed to disclose it. Thus, we have removed confidential information and placed others in "Train_PCA_YZ_withPred_0".
+## Abstract
 
-The PDF "ICLR_AutoGeTS_Appendix F_TREC-6 Results.pdf" presents the results of experiments conducted on TREC-6, an additional dataset, to assess the generalizability of our proposed AutoGeTS workflow.
+[cite_start]When developing text classification models for real world applications, one major challenge is the difficulty to collect sufficient data for all text classes[cite: 5]. [cite_start]In this work, we address this challenge by utilizing large language models (LLMs) to generate synthetic data and using such data to improve the performance of the models without waiting for more real data to be collected and labeled[cite: 6]. [cite_start]As an LLM generates different synthetic data in response to different input examples, we formulate an automated workflow, which searches for input examples that lead to more "effective" synthetic data for improving the model concerned[cite: 7]. [cite_start]We study three search strategies with an extensive set of experiments, and use experiment results to inform an ensemble algorithm that selects a search strategy according to the characteristics of a class[cite: 8]. [cite_start]Our further experiments demonstrate that this ensemble approach is more effective than each individual strategy in our automated workflow for improving classification models using LLMs[cite: 9].
 
-The PDF "KDD_2025_AutoGeTS_Submission" contains the submitted draft of the revised AutoGeTS paper to KDD 2025.
+---
 
-Required packages: 
-pip install catboost==1.2.5 inspyred==1.0.2 joblib==1.1.0 matplotlib==3.4.3 matplotlib-inline==0.1.7 numpy==1.26.4 "nvidia-ml-py==12.555.43" pandas==2.2.2 plotly==5.22.0 psutil==5.8.0 scikit-learn==0.24.2 openpyxl
+## Citation
+
+If you find this work useful, please cite our paper:
+
+```bibtex
+@misc{xue2025autogets,
+      title={AutoGeTS: Knowledge-based Automated Generation of Text Synthetics for Improving Text Classification}, 
+      author={Chenhao Xue and Raia Hadsell and Hugo Larochelle},
+      year={2025},
+      eprint={2508.10000},
+      archivePrefix={arXiv},
+      url={[https://arxiv.org/abs/2508.10000](https://arxiv.org/abs/2508.10000)}
+}
