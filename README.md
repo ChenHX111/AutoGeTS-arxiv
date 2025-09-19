@@ -1,6 +1,6 @@
 # AutoGeTS: Knowledge-based Automated Generation of Text Synthetics for Improving Text Classification
 
-**Authors**: Chenhao Xue, Raia Hadsell, Hugo Larochelle
+**Authors**: Chenhao Xue, Yuanzhe Jin, Adrian Carrasco-Revilla, Joyraj Chakraborty, Min Chen
 
 ---
 
@@ -15,11 +15,9 @@ When developing text classification models for real world applications, one majo
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@misc{xue2025autogets,
-      title={AutoGeTS: Knowledge-based Automated Generation of Text Synthetics for Improving Text Classification}, 
-      author={Chenhao Xue and Raia Hadsell and Hugo Larochelle},
-      year={2025},
-      eprint={2508.10000},
-      archivePrefix={arXiv},
-      url={[https://arxiv.org/abs/2508.10000](https://arxiv.org/abs/2508.10000)}
+@article{xue2025autogets,
+  title={AutoGeTS: Knowledge-based Automated Generation of Text Synthetics for Improving Text Classification},
+  author={Xue, Chenhao and Jin, Yuanzhe and Carrasco-Revilla, Adrian and Chakraborty, Joyraj and Chen, Min},
+  journal={arXiv preprint arXiv:2508.10000},
+  year={2025}
 }
